@@ -178,8 +178,10 @@ input {
 }
 
 .eye-svg {
-    border: solid transparent;
+    border: solid red;
     display: none;
+    justify-content: center;
+    align-items: center;
     width: 30px;
     height: 30px;
     position: absolute;
@@ -190,7 +192,7 @@ input {
 }
 
 .display-eye-svg {
-    display: block;
+    display: flex;
 }
 
 #check {
