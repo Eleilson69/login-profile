@@ -1,0 +1,88 @@
+@media only screen and (max-width: 700px) {
+    header {
+        margin-top: 10%;
+        margin-bottom: 10%;
+        justify-content: center;
+    }
+    body {
+        position: relative;
+        margin: 0;
+        width: 99vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .cadastro {
+        display: none;
+    }
+    .cadastro2 {
+        position: absolute;
+        top: 420px;
+        font-family: Arial, Helvetica, sans-serif;
+        min-width: 90vw;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10% 0 0 0;
+        color: #fff;
+        font-size: 0.8em;
+    }
+    main {
+        margin: 0;
+        width: 100vw;
+        height: 83vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .box-login {
+        margin: 0;
+    }
+    .left-login {
+        position: relative;
+        width: 99%;
+        height: 70%;
+    }
+    .card-login {
+        position: absolute;
+        top: 5%;
+        justify-content: start;
+        width: 340px;
+        height: 360px;
+    }
+    .textfild {
+        margin: 0px 30px 25px 30px;
+        display: flex;
+        height: 100px;
+        flex-direction: column;
+        position: relative;
+    }
+    .eye-svg {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 10px;
+        top: 0%;
+        cursor: pointer;
+        opacity: 0.4;
+    }
+    .esqueceu-a-senha {
+        display: flex;
+        justify-content: center;
+        margin: 50px 30px 0px 30px;
+    }
+    .rigth-login {
+        display: none;
+    }
+    #Login {
+        margin-top: 1%;
+    }
+    .save {
+        border: solid transparent;
+        display: flex;
+        align-items: center;
+    }
+    #bnt {
+        margin-top: 0;
+    }
+}
