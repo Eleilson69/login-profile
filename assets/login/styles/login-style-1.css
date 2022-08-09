@@ -163,7 +163,7 @@ input {
 }
 
 .password-eye {
-    border: solid transparent;
+    border: solid red;
     position: relative;
 }
 
@@ -178,12 +178,12 @@ input {
 }
 
 .eye-svg {
-    border: solid red;
+    border: solid black;
     display: none;
     justify-content: center;
     align-items: center;
     width: 30px;
-    height: 30px;
+    min-height: 84%;
     position: absolute;
     right: 1%;
     top: 0%;
