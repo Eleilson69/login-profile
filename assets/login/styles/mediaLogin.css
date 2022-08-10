@@ -34,6 +34,10 @@
         height: 83vh;
         display: flex;
         flex-direction: column;
+        border: none;
+        margin: 0;
+        display: flex;
+        box-shadow: 5px 3px 5px rgba(0, 0, 0, 0);
     }
     .box-login {
         margin: 0;
@@ -68,6 +72,7 @@
         top: 0%;
         cursor: pointer;
         opacity: 0.4;
+        border: none;
     }
     .display-eye-svg {
         display: flex;
