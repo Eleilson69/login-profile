@@ -6,7 +6,7 @@ const enter = document.querySelector('#bnt')
 const form = document.querySelector('.card-login')
 
 let usuario = [
-    { email: 'Elleylson.santtos.7@gmail.com', senha: 'Elleylson69' },
+    { email: 'elleylson.santtos.7@gmail.com', senha: 'Elleylson69' },
     { email: 'maxta.gamer@gmail.com', senha: 'MxtTrap22' }
 ]
 const emailValido = () => email.value
@@ -71,7 +71,7 @@ passwordInput.addEventListener('change', () => removePasswordErro())
 enter.addEventListener('click', () => emailErro())
 email.addEventListener('change', () => removeEmailErro())
 
-enter.addEventListener('click', () => enterProfile())
+
 
 const eyeclic = () => {
 
@@ -103,11 +103,31 @@ const hidePassword = () => {
 form.addEventListener('submit', Event => {
     Event.preventDefault()
 
+    // const exclude = /[^@-.w]|^[_@.-]|[._-]{2}|[@.]{2}|(@)[^@]*1/;
+    // const check = /@[w-]+./;
+    // const checkend = /.[a-zA-Z]{2,3}$/;
+
     const emailIsvalido = emailValido()
     const senhaIsValida = senhaValida()
+    const emailIndex = usuario[0].email
+    const senhaIdex = usuario[0].senha
+
+    if (emailIsvalido != emailIndex) {
+        email.classList.add('error');
+
+    } else {
+        email.classList.remove('error');
+    }
+
+    if (senhaIsValida != senhaIdex) {
+        passwordInput.classList.add('error');
+    } else {
+        passwordInput.classList.remove('error');
+    }
 
     if (emailIsvalido == usuario[0].email && senhaIsValida == usuario[0].senha) {
         return location = "https://eleilson69.github.io/profile/"
+
     }
 })
 
